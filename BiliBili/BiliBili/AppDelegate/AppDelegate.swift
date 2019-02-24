@@ -3,7 +3,7 @@
 //  BiliBili
 //
 //  Created by administrator on 2018/11/14.
-//  Copyright © 2018年 administrator. All rights reserved.
+//  Copyright © 2018年 Yijo. All rights reserved.
 //
 
 import UIKit

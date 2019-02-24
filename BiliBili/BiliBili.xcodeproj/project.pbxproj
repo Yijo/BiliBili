@@ -12,6 +12,11 @@
 		C302DC0F219BB55C00853412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C302DC0D219BB55C00853412 /* Main.storyboard */; };
 		C302DC11219BB55E00853412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C302DC10219BB55E00853412 /* Assets.xcassets */; };
 		C302DC14219BB55E00853412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C302DC12219BB55E00853412 /* LaunchScreen.storyboard */; };
+		C36779E622216373005729B9 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779E522216373005729B9 /* Requestable.swift */; };
+		C36779EB22216E45005729B9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779EA22216E45005729B9 /* User.swift */; };
+		C36779ED22219D00005729B9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779EC22219D00005729B9 /* NetworkManager.swift */; };
+		C36779F12222A5F0005729B9 /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779F02222A5F0005729B9 /* LoginAPI.swift */; };
+		C36779F32222A678005729B9 /* BiliBiliTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779F22222A678005729B9 /* BiliBiliTargetType.swift */; };
 		EA973D1C55BD87C88C958E35 /* Pods_BiliBili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320E04FD5D3921D960330C98 /* Pods_BiliBili.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +31,11 @@
 		C302DC10219BB55E00853412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C302DC13219BB55E00853412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C302DC15219BB55E00853412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C36779E522216373005729B9 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		C36779EA22216E45005729B9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C36779EC22219D00005729B9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C36779F02222A5F0005729B9 /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		C36779F22222A678005729B9 /* BiliBiliTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiliBiliTargetType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +88,10 @@
 		C302DC08219BB55C00853412 /* BiliBili */ = {
 			isa = PBXGroup;
 			children = (
-				C302DC09219BB55C00853412 /* AppDelegate.swift */,
+				C36779F42222AAC2005729B9 /* Database */,
+				C36779E722216390005729B9 /* Modual */,
+				C36779E422216353005729B9 /* AppDelegate */,
+				C36779E322216327005729B9 /* Networking */,
 				C302DC0B219BB55C00853412 /* ViewController.swift */,
 				C302DC0D219BB55C00853412 /* Main.storyboard */,
 				C302DC10219BB55E00853412 /* Assets.xcassets */,
@@ -86,6 +99,72 @@
 				C302DC15219BB55E00853412 /* Info.plist */,
 			);
 			path = BiliBili;
+			sourceTree = "<group>";
+		};
+		C36779E322216327005729B9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C36779EE2222A5BF005729B9 /* API */,
+				C36779E522216373005729B9 /* Requestable.swift */,
+				C36779EC22219D00005729B9 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C36779E422216353005729B9 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C302DC09219BB55C00853412 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C36779E722216390005729B9 /* Modual */ = {
+			isa = PBXGroup;
+			children = (
+				C36779E822216679005729B9 /* Login */,
+			);
+			path = Modual;
+			sourceTree = "<group>";
+		};
+		C36779E822216679005729B9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C36779E922216E22005729B9 /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C36779E922216E22005729B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C36779EA22216E45005729B9 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C36779EE2222A5BF005729B9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C36779EF2222A5CD005729B9 /* Login */,
+				C36779F22222A678005729B9 /* BiliBiliTargetType.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C36779EF2222A5CD005729B9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C36779F02222A5F0005729B9 /* LoginAPI.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C36779F42222AAC2005729B9 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +197,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = administrator;
+				ORGANIZATIONNAME = Yijo;
 				TargetAttributes = {
 					C302DC05219BB55C00853412 = {
 						CreatedOnToolsVersion = 10.0;
@@ -240,7 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36779EB22216E45005729B9 /* User.swift in Sources */,
+				C36779E622216373005729B9 /* Requestable.swift in Sources */,
+				C36779F32222A678005729B9 /* BiliBiliTargetType.swift in Sources */,
 				C302DC0C219BB55C00853412 /* ViewController.swift in Sources */,
+				C36779ED22219D00005729B9 /* NetworkManager.swift in Sources */,
+				C36779F12222A5F0005729B9 /* LoginAPI.swift in Sources */,
 				C302DC0A219BB55C00853412 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,15 +472,18 @@
 			baseConfigurationReference = 87563A550633CA1B54493B7E /* Pods-BiliBili.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y6DXHFGU9M;
 				INFOPLIST_FILE = BiliBili/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.BiliBili.Yijo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -407,15 +494,18 @@
 			baseConfigurationReference = 87AA59B27A9339253975ED32 /* Pods-BiliBili.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y6DXHFGU9M;
 				INFOPLIST_FILE = BiliBili/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.BiliBili.Yijo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
