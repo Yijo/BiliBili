@@ -21,6 +21,11 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.5.2):
     - PromiseKit/CorePromise
+  - Realm (3.11.1):
+    - Realm/Headers (= 3.11.1)
+  - Realm/Headers (3.11.1)
+  - RealmSwift (3.11.1):
+    - Realm (= 3.11.1)
   - Result (3.2.4)
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
@@ -42,6 +47,7 @@ DEPENDENCIES:
   - Moya
   - ObjectMapper
   - PromiseKit
+  - RealmSwift
   - SDCycleScrollView
   - SnapKit
   - SVProgressHUD
@@ -60,6 +66,8 @@ SPEC REPOS:
     - Moya
     - ObjectMapper
     - PromiseKit
+    - Realm
+    - RealmSwift
     - Result
     - SDCycleScrollView
     - SDWebImage
@@ -79,6 +87,8 @@ SPEC CHECKSUMS:
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   PromiseKit: 27c1601bfb73405871b805bcb8cf7e55c4dad3db
+  Realm: 037c5919b9ceb59d6beed5d3b031096856b119b3
+  RealmSwift: c9580133e73ef40ed340401af2dbc9a5790dfea7
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
@@ -87,6 +97,6 @@ SPEC CHECKSUMS:
   XLPagerTabStrip: 22d4c58200d7c105e0e407ab6bfd01a5d85014be
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: b7adb7d41a2f7751a65c9c7e579fa9243eb1f351
+PODFILE CHECKSUM: 66e9208b83196e75e24637ca988e4733f99fb139
 
 COCOAPODS: 1.5.3

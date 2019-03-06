@@ -6,8 +6,21 @@
 //  Copyright © 2019年 Yijo. All rights reserved.
 //
 
-// Network manager.
+import PromiseKit
+import ObjectMapper
+
+/// Network manager.
 struct NetworkManager {
     static let manager = NetworkManager()
     private init() {}
+}
+
+extension NetworkManager {
+    func request<M: Mappable, API: BiliBiliTargetType>(target: API) -> Promise<M> {
+        return Request<M, API>().request(target: target)
+    }
+
+    func upLoad() {}
+    
+    func downLoad() {}
 }

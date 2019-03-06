@@ -49,4 +49,7 @@ target 'BiliBili' do
   ## Image download
   pod 'Kingfisher'
 
+  ## Database
+  pod 'RealmSwift'
+  
 end

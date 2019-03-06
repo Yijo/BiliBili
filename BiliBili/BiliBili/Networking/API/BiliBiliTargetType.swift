@@ -20,6 +20,12 @@ protocol BiliBiliTargetType: TargetType {
 extension BiliBiliTargetType {
     var baseURL: URL { return URL(string: "3")! }
     
+    var path: String { return "" }
+    
+    var method: Method { return .get }
+    
+    var task: Task { return .requestPlain }
+    
     var sampleData: Data {
         return "This is sample data".data(using: .utf8)!
     }
@@ -28,11 +34,7 @@ extension BiliBiliTargetType {
         return ["Content-type": "application/json"]
     }
     
-    var parameters: [String: Any]? {
-        return nil
-    }
+    var parameters: [String: Any]? { return nil }
     
-    var parameterEncode: ParameterEncoding {
-        return URLEncoding.default
-    }
+    var parameterEncode: ParameterEncoding { return URLEncoding.default }
 }

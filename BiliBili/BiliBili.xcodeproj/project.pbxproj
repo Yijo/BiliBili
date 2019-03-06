@@ -12,6 +12,8 @@
 		C302DC0F219BB55C00853412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C302DC0D219BB55C00853412 /* Main.storyboard */; };
 		C302DC11219BB55E00853412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C302DC10219BB55E00853412 /* Assets.xcassets */; };
 		C302DC14219BB55E00853412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C302DC12219BB55E00853412 /* LaunchScreen.storyboard */; };
+		C35B69CD222FA233002B4760 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69CC222FA233002B4760 /* Model.swift */; };
+		C35B69CF222FB691002B4760 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69CE222FB691002B4760 /* Request.swift */; };
 		C36779E622216373005729B9 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779E522216373005729B9 /* Requestable.swift */; };
 		C36779EB22216E45005729B9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779EA22216E45005729B9 /* User.swift */; };
 		C36779ED22219D00005729B9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779EC22219D00005729B9 /* NetworkManager.swift */; };
@@ -31,6 +33,8 @@
 		C302DC10219BB55E00853412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C302DC13219BB55E00853412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C302DC15219BB55E00853412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C35B69CC222FA233002B4760 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C35B69CE222FB691002B4760 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		C36779E522216373005729B9 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		C36779EA22216E45005729B9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C36779EC22219D00005729B9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -101,12 +105,21 @@
 			path = BiliBili;
 			sourceTree = "<group>";
 		};
+		C35B69D0222FBF3D002B4760 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		C36779E322216327005729B9 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				C36779EE2222A5BF005729B9 /* API */,
 				C36779E522216373005729B9 /* Requestable.swift */,
 				C36779EC22219D00005729B9 /* NetworkManager.swift */,
+				C35B69CC222FA233002B4760 /* Model.swift */,
+				C35B69CE222FB691002B4760 /* Request.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -163,6 +176,7 @@
 		C36779F42222AAC2005729B9 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				C35B69D0222FBF3D002B4760 /* Realm */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -255,6 +269,8 @@
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -277,6 +293,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -326,6 +344,8 @@
 				C36779ED22219D00005729B9 /* NetworkManager.swift in Sources */,
 				C36779F12222A5F0005729B9 /* LoginAPI.swift in Sources */,
 				C302DC0A219BB55C00853412 /* AppDelegate.swift in Sources */,
+				C35B69CF222FB691002B4760 /* Request.swift in Sources */,
+				C35B69CD222FA233002B4760 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
