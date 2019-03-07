@@ -44,3 +44,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+import RealmSwift
+
+// MARK: - Realm
+extension AppDelegate {
+    func migrateRealmData() {
+        let config = Realm.Configuration(schemaVersion: 1, migrationBlock: { (migration, oldSchemaVersion) in
+            // potentially lengthy data migration
+        })
+        
+        Realm.asyncOpen(configuration: config) { realm, error in
+            if let realm = realm {
+                // Realm successfully opened, with migration applied on background thread
+            } else if let error = error {
+                // Handle error that occurred while opening the Realm
+            }
+        }
+    }
+}

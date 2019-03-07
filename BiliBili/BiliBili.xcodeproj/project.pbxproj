@@ -14,6 +14,10 @@
 		C302DC14219BB55E00853412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C302DC12219BB55E00853412 /* LaunchScreen.storyboard */; };
 		C35B69CD222FA233002B4760 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69CC222FA233002B4760 /* Model.swift */; };
 		C35B69CF222FB691002B4760 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69CE222FB691002B4760 /* Request.swift */; };
+		C35B69D22230A7D7002B4760 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69D12230A7D7002B4760 /* Realm.swift */; };
+		C35B69D42230AA57002B4760 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69D32230AA57002B4760 /* DataBaseManager.swift */; };
+		C35B69D92230AC21002B4760 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69D82230AC21002B4760 /* UserManager.swift */; };
+		C35B69DB2230B417002B4760 /* Realmable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69DA2230B417002B4760 /* Realmable.swift */; };
 		C36779E622216373005729B9 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779E522216373005729B9 /* Requestable.swift */; };
 		C36779EB22216E45005729B9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779EA22216E45005729B9 /* User.swift */; };
 		C36779ED22219D00005729B9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779EC22219D00005729B9 /* NetworkManager.swift */; };
@@ -35,6 +39,10 @@
 		C302DC15219BB55E00853412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C35B69CC222FA233002B4760 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C35B69CE222FB691002B4760 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		C35B69D12230A7D7002B4760 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		C35B69D32230AA57002B4760 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		C35B69D82230AC21002B4760 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		C35B69DA2230B417002B4760 /* Realmable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realmable.swift; sourceTree = "<group>"; };
 		C36779E522216373005729B9 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		C36779EA22216E45005729B9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C36779EC22219D00005729B9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -92,7 +100,7 @@
 		C302DC08219BB55C00853412 /* BiliBili */ = {
 			isa = PBXGroup;
 			children = (
-				C36779F42222AAC2005729B9 /* Database */,
+				C35B69D52230AB9D002B4760 /* Storage */,
 				C36779E722216390005729B9 /* Modual */,
 				C36779E422216353005729B9 /* AppDelegate */,
 				C36779E322216327005729B9 /* Networking */,
@@ -108,8 +116,35 @@
 		C35B69D0222FBF3D002B4760 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				C35B69D12230A7D7002B4760 /* Realm.swift */,
+				C35B69DA2230B417002B4760 /* Realmable.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		C35B69D52230AB9D002B4760 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				C35B69D72230AC03002B4760 /* UserDefault */,
+				C35B69D62230ABDB002B4760 /* Keychain */,
+				C36779F42222AAC2005729B9 /* Database */,
+				C35B69D82230AC21002B4760 /* UserManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		C35B69D62230ABDB002B4760 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		C35B69D72230AC03002B4760 /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserDefault;
 			sourceTree = "<group>";
 		};
 		C36779E322216327005729B9 /* Networking */ = {
@@ -177,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				C35B69D0222FBF3D002B4760 /* Realm */,
+				C35B69D32230AA57002B4760 /* DataBaseManager.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -341,11 +377,15 @@
 				C36779E622216373005729B9 /* Requestable.swift in Sources */,
 				C36779F32222A678005729B9 /* BiliBiliTargetType.swift in Sources */,
 				C302DC0C219BB55C00853412 /* ViewController.swift in Sources */,
+				C35B69DB2230B417002B4760 /* Realmable.swift in Sources */,
 				C36779ED22219D00005729B9 /* NetworkManager.swift in Sources */,
+				C35B69D22230A7D7002B4760 /* Realm.swift in Sources */,
+				C35B69D92230AC21002B4760 /* UserManager.swift in Sources */,
 				C36779F12222A5F0005729B9 /* LoginAPI.swift in Sources */,
 				C302DC0A219BB55C00853412 /* AppDelegate.swift in Sources */,
 				C35B69CF222FB691002B4760 /* Request.swift in Sources */,
 				C35B69CD222FA233002B4760 /* Model.swift in Sources */,
+				C35B69D42230AA57002B4760 /* DataBaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
