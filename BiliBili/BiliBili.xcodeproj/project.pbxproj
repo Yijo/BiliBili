@@ -18,6 +18,8 @@
 		C35B69D42230AA57002B4760 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69D32230AA57002B4760 /* DataBaseManager.swift */; };
 		C35B69D92230AC21002B4760 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69D82230AC21002B4760 /* UserManager.swift */; };
 		C35B69DB2230B417002B4760 /* Realmable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69DA2230B417002B4760 /* Realmable.swift */; };
+		C35B69E22231FA12002B4760 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69E12231FA12002B4760 /* LoginProtocol.swift */; };
+		C35B69E5223228FB002B4760 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69E4223228FB002B4760 /* LoginRouter.swift */; };
 		C36779E622216373005729B9 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779E522216373005729B9 /* Requestable.swift */; };
 		C36779EB22216E45005729B9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779EA22216E45005729B9 /* User.swift */; };
 		C36779ED22219D00005729B9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779EC22219D00005729B9 /* NetworkManager.swift */; };
@@ -43,6 +45,8 @@
 		C35B69D32230AA57002B4760 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 		C35B69D82230AC21002B4760 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		C35B69DA2230B417002B4760 /* Realmable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realmable.swift; sourceTree = "<group>"; };
+		C35B69E12231FA12002B4760 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		C35B69E4223228FB002B4760 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		C36779E522216373005729B9 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		C36779EA22216E45005729B9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C36779EC22219D00005729B9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -147,6 +151,50 @@
 			path = UserDefault;
 			sourceTree = "<group>";
 		};
+		C35B69DC22311707002B4760 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C35B69DD2231F8F1002B4760 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		C35B69DE2231F924002B4760 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C35B69DF2231F92E002B4760 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C35B69E02231F9C1002B4760 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C35B69E12231FA12002B4760 /* LoginProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C35B69E3223228A5002B4760 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C35B69E4223228FB002B4760 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		C36779E322216327005729B9 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,17 +226,23 @@
 		C36779E822216679005729B9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				C36779E922216E22005729B9 /* Model */,
+				C35B69E3223228A5002B4760 /* Router */,
+				C35B69E02231F9C1002B4760 /* Protocol */,
+				C35B69DF2231F92E002B4760 /* Presenter */,
+				C35B69DE2231F924002B4760 /* View */,
+				C35B69DD2231F8F1002B4760 /* DataManager */,
+				C35B69DC22311707002B4760 /* Interactor */,
+				C36779E922216E22005729B9 /* Entities */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		C36779E922216E22005729B9 /* Model */ = {
+		C36779E922216E22005729B9 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 				C36779EA22216E45005729B9 /* User.swift */,
 			);
-			path = Model;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		C36779EE2222A5BF005729B9 /* API */ = {
@@ -373,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C35B69E22231FA12002B4760 /* LoginProtocol.swift in Sources */,
 				C36779EB22216E45005729B9 /* User.swift in Sources */,
 				C36779E622216373005729B9 /* Requestable.swift in Sources */,
 				C36779F32222A678005729B9 /* BiliBiliTargetType.swift in Sources */,
@@ -380,6 +435,7 @@
 				C35B69DB2230B417002B4760 /* Realmable.swift in Sources */,
 				C36779ED22219D00005729B9 /* NetworkManager.swift in Sources */,
 				C35B69D22230A7D7002B4760 /* Realm.swift in Sources */,
+				C35B69E5223228FB002B4760 /* LoginRouter.swift in Sources */,
 				C35B69D92230AC21002B4760 /* UserManager.swift in Sources */,
 				C36779F12222A5F0005729B9 /* LoginAPI.swift in Sources */,
 				C302DC0A219BB55C00853412 /* AppDelegate.swift in Sources */,
