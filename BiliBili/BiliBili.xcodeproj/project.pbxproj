@@ -12,6 +12,10 @@
 		C302DC0F219BB55C00853412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C302DC0D219BB55C00853412 /* Main.storyboard */; };
 		C302DC11219BB55E00853412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C302DC10219BB55E00853412 /* Assets.xcassets */; };
 		C302DC14219BB55E00853412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C302DC12219BB55E00853412 /* LaunchScreen.storyboard */; };
+		C31104BA2233E51900B2B77D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31104B92233E51900B2B77D /* LoginViewController.swift */; };
+		C31104BC2233FC2D00B2B77D /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31104BB2233FC2D00B2B77D /* LoginPresenter.swift */; };
+		C31104BE2233FD7D00B2B77D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31104BD2233FD7D00B2B77D /* LoginView.swift */; };
+		C31104C12234050A00B2B77D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31104C02234050A00B2B77D /* NavigationController.swift */; };
 		C35B69CD222FA233002B4760 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69CC222FA233002B4760 /* Model.swift */; };
 		C35B69CF222FB691002B4760 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69CE222FB691002B4760 /* Request.swift */; };
 		C35B69D22230A7D7002B4760 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69D12230A7D7002B4760 /* Realm.swift */; };
@@ -39,6 +43,10 @@
 		C302DC10219BB55E00853412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C302DC13219BB55E00853412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C302DC15219BB55E00853412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C31104B92233E51900B2B77D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C31104BB2233FC2D00B2B77D /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		C31104BD2233FD7D00B2B77D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C31104C02234050A00B2B77D /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		C35B69CC222FA233002B4760 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C35B69CE222FB691002B4760 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		C35B69D12230A7D7002B4760 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
@@ -104,6 +112,7 @@
 		C302DC08219BB55C00853412 /* BiliBili */ = {
 			isa = PBXGroup;
 			children = (
+				C31104BF223404E000B2B77D /* Base */,
 				C35B69D52230AB9D002B4760 /* Storage */,
 				C36779E722216390005729B9 /* Modual */,
 				C36779E422216353005729B9 /* AppDelegate */,
@@ -115,6 +124,14 @@
 				C302DC15219BB55E00853412 /* Info.plist */,
 			);
 			path = BiliBili;
+			sourceTree = "<group>";
+		};
+		C31104BF223404E000B2B77D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C31104C02234050A00B2B77D /* NavigationController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		C35B69D0222FBF3D002B4760 /* Realm */ = {
@@ -168,6 +185,8 @@
 		C35B69DE2231F924002B4760 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C31104B92233E51900B2B77D /* LoginViewController.swift */,
+				C31104BD2233FD7D00B2B77D /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +194,7 @@
 		C35B69DF2231F92E002B4760 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				C31104BB2233FC2D00B2B77D /* LoginPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -436,9 +456,13 @@
 				C36779ED22219D00005729B9 /* NetworkManager.swift in Sources */,
 				C35B69D22230A7D7002B4760 /* Realm.swift in Sources */,
 				C35B69E5223228FB002B4760 /* LoginRouter.swift in Sources */,
+				C31104BC2233FC2D00B2B77D /* LoginPresenter.swift in Sources */,
 				C35B69D92230AC21002B4760 /* UserManager.swift in Sources */,
 				C36779F12222A5F0005729B9 /* LoginAPI.swift in Sources */,
+				C31104C12234050A00B2B77D /* NavigationController.swift in Sources */,
+				C31104BE2233FD7D00B2B77D /* LoginView.swift in Sources */,
 				C302DC0A219BB55C00853412 /* AppDelegate.swift in Sources */,
+				C31104BA2233E51900B2B77D /* LoginViewController.swift in Sources */,
 				C35B69CF222FB691002B4760 /* Request.swift in Sources */,
 				C35B69CD222FA233002B4760 /* Model.swift in Sources */,
 				C35B69D42230AA57002B4760 /* DataBaseManager.swift in Sources */,

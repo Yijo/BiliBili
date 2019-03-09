@@ -32,6 +32,11 @@ protocol LoginPresenterProtocol {
     var interactor: LoginInteractorInputProtocol? { get set }
     var wireFrame: LoginRouterProtocol? { get set }
     func viewDidLoad()
+    
+    func sign(from view: LoginViewProtocol)
+    func register(from view: LoginViewProtocol)
+    func forgotPassword(from view: LoginViewProtocol)
+    func cancel(from view: LoginViewProtocol)
 }
 
 // MARK: - Interactor
