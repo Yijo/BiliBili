@@ -2,7 +2,7 @@
 //  LoginAPI.swift
 //  BiliBili
 //
-//  Created by administrator on 2019/2/24.
+//  Created by Near on 2019/2/24.
 //  Copyright © 2019年 Yijo. All rights reserved.
 //
 
@@ -55,7 +55,7 @@ extension LoginAPI: BiliBiliTargetType {
     var path: String {
         switch self {
         case .getCaptcha:
-            return ""
+            return "4/news/latest"
         case .register:
             return ""
         case .signIn:

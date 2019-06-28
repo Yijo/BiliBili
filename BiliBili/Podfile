@@ -1,53 +1,58 @@
 use_frameworks!
+
+source 'https://github.com/CocoaPods/Specs.git'
+
 platform :ios, '10.0'
 
 target 'BiliBili' do
-	pod 'Moya'
-  
+#    pod 'Moya'
+    pod 'Moya/RxSwift', '~> 11.0'
+
+# State
+#    pod 'ReSwift'
   # UI Component
   
   ## Rich text
-  pod 'YYText'
-  
+#  pod 'YYText'
+
   ## QRcode
 #  pod 'EFQRCode'
   ## Banner
-  pod 'SDCycleScrollView'
-  
+#  pod 'SDCycleScrollView'
+
   ## Alert
-  pod 'SVProgressHUD'
+  pod 'Toaster', '~> 2.1.0'
   
   ## Keyboard
   pod 'IQKeyboardManagerSwift'
   
   ## Form
-  pod 'Eureka'
-  
+#  pod 'Eureka'
+
   ## Picker
-  pod 'ActionSheetPicker-3.0'
+#  pod 'ActionSheetPicker-3.0'
 #  pod 'McPicker'
 
   ## Menu
-  pod 'XLPagerTabStrip', '~> 8.0'
+  
   #Others
   
   pod 'CryptoSwift'
 
   ## Parser
   pod 'ObjectMapper'
-  # Pods for MemberCenterIOS
   
-  ## Call back
-  pod 'PromiseKit'
-  
+  ## Responsive
+#  pod 'RxSwift'
+
   ## Layout
   pod 'SnapKit'
   
   ## Refresh
-  pod 'MJRefresh'
-  
+#  pod 'MJRefresh'
+
   ## Image download
-  pod 'Kingfisher'
+#  pod 'Kingfisher'
 
   ## Database
   pod 'RealmSwift'

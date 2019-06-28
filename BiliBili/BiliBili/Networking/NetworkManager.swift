@@ -2,25 +2,34 @@
 //  NetworkManager.swift
 //  BiliBili
 //
-//  Created by administrator on 2019/2/23.
+//  Created by Near on 2019/2/23.
 //  Copyright © 2019年 Yijo. All rights reserved.
 //
 
-import PromiseKit
-import ObjectMapper
 
+import ObjectMapper
+import Moya
 /// Network manager.
 struct NetworkManager {
-    static let manager = NetworkManager()
+    static let shared = NetworkManager()
     private init() {}
 }
 
-extension NetworkManager {
-    func request<M: Mappable, API: BiliBiliTargetType>(target: API) -> Promise<M> {
-        return Request<M, API>().request(target: target)
+// Generate
+private extension NetworkManager {
+    func generateProvide<API: BiliBiliTargetType>() -> MoyaProvider<API> {
+        return MoyaProvider<API>(plugins: [NetworkActivityPlugin(networkActivityClosure: { type, _ in
+            switch type {
+            case .began:
+                UIApplication.shared.isNetworkActivityIndicatorVisible = true
+            case .ended:
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            }
+        })])
     }
+}
 
-    func upLoad() {}
+
+extension NetworkManager {
     
-    func downLoad() {}
 }

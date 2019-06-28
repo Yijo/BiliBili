@@ -7,25 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D6FBF4522C45876007B804D /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF4422C45876007B804D /* String+URL.swift */; };
+		4D6FBF4722C49D20007B804D /* Observable+ObjectMapper+Moya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF4622C49D20007B804D /* Observable+ObjectMapper+Moya.swift */; };
+		4D6FBF4922C4A057007B804D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF4822C4A057007B804D /* NetworkError.swift */; };
+		4D6FBF4D22C5ED83007B804D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF4C22C5ED83007B804D /* BaseViewController.swift */; };
+		4D6FBF5022C5EF7E007B804D /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D6FBF4F22C5EF7E007B804D /* menu.json */; };
+		4D6FBF5322C5EFB9007B804D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF5222C5EFB9007B804D /* TabBarController.swift */; };
+		4D6FBF5722C5F061007B804D /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF5622C5F061007B804D /* Keychain.swift */; };
+		4D6FBF5922C5F070007B804D /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF5822C5F070007B804D /* UserDefault.swift */; };
+		4D6FBF5F22C5F4D5007B804D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF5E22C5F4D5007B804D /* LoginViewModel.swift */; };
+		4D6FBF6322C5F50A007B804D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF6222C5F50A007B804D /* LoginView.swift */; };
+		4D6FBF6522C60017007B804D /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6FBF6422C60017007B804D /* LoginView.xib */; };
+		4D6FBF6722C60039007B804D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF6622C60039007B804D /* LoginController.swift */; };
+		4D6FBF6922C6004F007B804D /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF6822C6004F007B804D /* LoginModel.swift */; };
+		4D6FBF6C22C60851007B804D /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF6B22C60851007B804D /* Bridge.swift */; };
+		4D6FBF6F22C60934007B804D /* Int+Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF6E22C60934007B804D /* Int+Bytes.swift */; };
+		4D6FBF7222C60BBB007B804D /* IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF7122C60BBB007B804D /* IBInspectable.swift */; };
+		4D6FBF7522C60C8F007B804D /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF7422C60C8F007B804D /* ThemeProtocol.swift */; };
+		4D6FBF7722C6108B007B804D /* DefaultEmpty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6FBF7622C6108B007B804D /* DefaultEmpty.xib */; };
+		4D6FBF7922C610EF007B804D /* UIView+LoadXib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF7822C610EF007B804D /* UIView+LoadXib.swift */; };
 		C302DC0A219BB55C00853412 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C302DC09219BB55C00853412 /* AppDelegate.swift */; };
 		C302DC0C219BB55C00853412 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C302DC0B219BB55C00853412 /* ViewController.swift */; };
 		C302DC0F219BB55C00853412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C302DC0D219BB55C00853412 /* Main.storyboard */; };
 		C302DC11219BB55E00853412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C302DC10219BB55E00853412 /* Assets.xcassets */; };
 		C302DC14219BB55E00853412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C302DC12219BB55E00853412 /* LaunchScreen.storyboard */; };
-		C31104BA2233E51900B2B77D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31104B92233E51900B2B77D /* LoginViewController.swift */; };
-		C31104BC2233FC2D00B2B77D /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31104BB2233FC2D00B2B77D /* LoginPresenter.swift */; };
-		C31104BE2233FD7D00B2B77D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31104BD2233FD7D00B2B77D /* LoginView.swift */; };
 		C31104C12234050A00B2B77D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31104C02234050A00B2B77D /* NavigationController.swift */; };
-		C35B69CD222FA233002B4760 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69CC222FA233002B4760 /* Model.swift */; };
-		C35B69CF222FB691002B4760 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69CE222FB691002B4760 /* Request.swift */; };
+		C35B69CD222FA233002B4760 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69CC222FA233002B4760 /* NetworkStatus.swift */; };
 		C35B69D22230A7D7002B4760 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69D12230A7D7002B4760 /* Realm.swift */; };
 		C35B69D42230AA57002B4760 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69D32230AA57002B4760 /* DataBaseManager.swift */; };
 		C35B69D92230AC21002B4760 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69D82230AC21002B4760 /* UserManager.swift */; };
 		C35B69DB2230B417002B4760 /* Realmable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69DA2230B417002B4760 /* Realmable.swift */; };
-		C35B69E22231FA12002B4760 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69E12231FA12002B4760 /* LoginProtocol.swift */; };
-		C35B69E5223228FB002B4760 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B69E4223228FB002B4760 /* LoginRouter.swift */; };
-		C36779E622216373005729B9 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779E522216373005729B9 /* Requestable.swift */; };
-		C36779EB22216E45005729B9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779EA22216E45005729B9 /* User.swift */; };
 		C36779ED22219D00005729B9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779EC22219D00005729B9 /* NetworkManager.swift */; };
 		C36779F12222A5F0005729B9 /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779F02222A5F0005729B9 /* LoginAPI.swift */; };
 		C36779F32222A678005729B9 /* BiliBiliTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36779F22222A678005729B9 /* BiliBiliTargetType.swift */; };
@@ -34,6 +45,25 @@
 
 /* Begin PBXFileReference section */
 		320E04FD5D3921D960330C98 /* Pods_BiliBili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiliBili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D6FBF4422C45876007B804D /* String+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
+		4D6FBF4622C49D20007B804D /* Observable+ObjectMapper+Moya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+ObjectMapper+Moya.swift"; sourceTree = "<group>"; };
+		4D6FBF4822C4A057007B804D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		4D6FBF4C22C5ED83007B804D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4D6FBF4F22C5EF7E007B804D /* menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		4D6FBF5222C5EFB9007B804D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4D6FBF5622C5F061007B804D /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		4D6FBF5822C5F070007B804D /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		4D6FBF5E22C5F4D5007B804D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		4D6FBF6222C5F50A007B804D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4D6FBF6422C60017007B804D /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		4D6FBF6622C60039007B804D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		4D6FBF6822C6004F007B804D /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		4D6FBF6B22C60851007B804D /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		4D6FBF6E22C60934007B804D /* Int+Bytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Bytes.swift"; sourceTree = "<group>"; };
+		4D6FBF7122C60BBB007B804D /* IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBInspectable.swift; sourceTree = "<group>"; };
+		4D6FBF7422C60C8F007B804D /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
+		4D6FBF7622C6108B007B804D /* DefaultEmpty.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultEmpty.xib; sourceTree = "<group>"; };
+		4D6FBF7822C610EF007B804D /* UIView+LoadXib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LoadXib.swift"; sourceTree = "<group>"; };
 		87563A550633CA1B54493B7E /* Pods-BiliBili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiliBili.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiliBili/Pods-BiliBili.debug.xcconfig"; sourceTree = "<group>"; };
 		87AA59B27A9339253975ED32 /* Pods-BiliBili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiliBili.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiliBili/Pods-BiliBili.release.xcconfig"; sourceTree = "<group>"; };
 		C302DC06219BB55C00853412 /* BiliBili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiliBili.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,20 +73,12 @@
 		C302DC10219BB55E00853412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C302DC13219BB55E00853412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C302DC15219BB55E00853412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C31104B92233E51900B2B77D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		C31104BB2233FC2D00B2B77D /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		C31104BD2233FD7D00B2B77D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C31104C02234050A00B2B77D /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		C35B69CC222FA233002B4760 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		C35B69CE222FB691002B4760 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		C35B69CC222FA233002B4760 /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		C35B69D12230A7D7002B4760 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		C35B69D32230AA57002B4760 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 		C35B69D82230AC21002B4760 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		C35B69DA2230B417002B4760 /* Realmable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realmable.swift; sourceTree = "<group>"; };
-		C35B69E12231FA12002B4760 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
-		C35B69E4223228FB002B4760 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
-		C36779E522216373005729B9 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
-		C36779EA22216E45005729B9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C36779EC22219D00005729B9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C36779F02222A5F0005729B9 /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
 		C36779F22222A678005729B9 /* BiliBiliTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiliBiliTargetType.swift; sourceTree = "<group>"; };
@@ -91,6 +113,115 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4D6FBF4322C4585A007B804D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF7022C60BAB007B804D /* View */,
+				4D6FBF6D22C6090F007B804D /* Int */,
+				4D6FBF4422C45876007B804D /* String+URL.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4D6FBF4E22C5EF63007B804D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF4F22C5EF7E007B804D /* menu.json */,
+				4D6FBF7622C6108B007B804D /* DefaultEmpty.xib */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4D6FBF5122C5EF95007B804D /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF5222C5EFB9007B804D /* TabBarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		4D6FBF5422C5F056007B804D /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF5622C5F061007B804D /* Keychain.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		4D6FBF5522C5F056007B804D /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF5822C5F070007B804D /* UserDefault.swift */,
+			);
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
+		4D6FBF5A22C5F48F007B804D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF6622C60039007B804D /* LoginController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D6FBF5B22C5F4A9007B804D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF6222C5F50A007B804D /* LoginView.swift */,
+				4D6FBF6422C60017007B804D /* LoginView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D6FBF5C22C5F4B4007B804D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF6822C6004F007B804D /* LoginModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D6FBF5D22C5F4BB007B804D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF5E22C5F4D5007B804D /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4D6FBF6A22C60840007B804D /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF6B22C60851007B804D /* Bridge.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		4D6FBF6D22C6090F007B804D /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF6E22C60934007B804D /* Int+Bytes.swift */,
+			);
+			path = Int;
+			sourceTree = "<group>";
+		};
+		4D6FBF7022C60BAB007B804D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF7122C60BBB007B804D /* IBInspectable.swift */,
+				4D6FBF7822C610EF007B804D /* UIView+LoadXib.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D6FBF7322C60C7B007B804D /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF7422C60C8F007B804D /* ThemeProtocol.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		C302DBFD219BB55C00853412 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +243,10 @@
 		C302DC08219BB55C00853412 /* BiliBili */ = {
 			isa = PBXGroup;
 			children = (
+				4D6FBF7322C60C7B007B804D /* Theme */,
+				4D6FBF6A22C60840007B804D /* Bridge */,
+				4D6FBF4E22C5EF63007B804D /* Sources */,
+				4D6FBF4322C4585A007B804D /* Extension */,
 				C31104BF223404E000B2B77D /* Base */,
 				C35B69D52230AB9D002B4760 /* Storage */,
 				C36779E722216390005729B9 /* Modual */,
@@ -130,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				C31104C02234050A00B2B77D /* NavigationController.swift */,
+				4D6FBF4C22C5ED83007B804D /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -146,83 +282,22 @@
 		C35B69D52230AB9D002B4760 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				C35B69D72230AC03002B4760 /* UserDefault */,
-				C35B69D62230ABDB002B4760 /* Keychain */,
+				4D6FBF5422C5F056007B804D /* Keychain */,
+				4D6FBF5522C5F056007B804D /* UserDefault */,
 				C36779F42222AAC2005729B9 /* Database */,
 				C35B69D82230AC21002B4760 /* UserManager.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
 		};
-		C35B69D62230ABDB002B4760 /* Keychain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Keychain;
-			sourceTree = "<group>";
-		};
-		C35B69D72230AC03002B4760 /* UserDefault */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UserDefault;
-			sourceTree = "<group>";
-		};
-		C35B69DC22311707002B4760 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		C35B69DD2231F8F1002B4760 /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
-		C35B69DE2231F924002B4760 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C31104B92233E51900B2B77D /* LoginViewController.swift */,
-				C31104BD2233FD7D00B2B77D /* LoginView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C35B69DF2231F92E002B4760 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				C31104BB2233FC2D00B2B77D /* LoginPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		C35B69E02231F9C1002B4760 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				C35B69E12231FA12002B4760 /* LoginProtocol.swift */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		C35B69E3223228A5002B4760 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				C35B69E4223228FB002B4760 /* LoginRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		C36779E322216327005729B9 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				C36779EE2222A5BF005729B9 /* API */,
-				C36779E522216373005729B9 /* Requestable.swift */,
 				C36779EC22219D00005729B9 /* NetworkManager.swift */,
-				C35B69CC222FA233002B4760 /* Model.swift */,
-				C35B69CE222FB691002B4760 /* Request.swift */,
+				C35B69CC222FA233002B4760 /* NetworkStatus.swift */,
+				4D6FBF4622C49D20007B804D /* Observable+ObjectMapper+Moya.swift */,
+				4D6FBF4822C4A057007B804D /* NetworkError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -238,6 +313,7 @@
 		C36779E722216390005729B9 /* Modual */ = {
 			isa = PBXGroup;
 			children = (
+				4D6FBF5122C5EF95007B804D /* Tabbar */,
 				C36779E822216679005729B9 /* Login */,
 			);
 			path = Modual;
@@ -246,23 +322,12 @@
 		C36779E822216679005729B9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				C35B69E3223228A5002B4760 /* Router */,
-				C35B69E02231F9C1002B4760 /* Protocol */,
-				C35B69DF2231F92E002B4760 /* Presenter */,
-				C35B69DE2231F924002B4760 /* View */,
-				C35B69DD2231F8F1002B4760 /* DataManager */,
-				C35B69DC22311707002B4760 /* Interactor */,
-				C36779E922216E22005729B9 /* Entities */,
+				4D6FBF5D22C5F4BB007B804D /* ViewModels */,
+				4D6FBF5C22C5F4B4007B804D /* Models */,
+				4D6FBF5B22C5F4A9007B804D /* Views */,
+				4D6FBF5A22C5F48F007B804D /* Controllers */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		C36779E922216E22005729B9 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				C36779EA22216E45005729B9 /* User.swift */,
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 		C36779EE2222A5BF005729B9 /* API */ = {
@@ -353,7 +418,10 @@
 			files = (
 				C302DC14219BB55E00853412 /* LaunchScreen.storyboard in Resources */,
 				C302DC11219BB55E00853412 /* Assets.xcassets in Resources */,
+				4D6FBF5022C5EF7E007B804D /* menu.json in Resources */,
+				4D6FBF6522C60017007B804D /* LoginView.xib in Resources */,
 				C302DC0F219BB55C00853412 /* Main.storyboard in Resources */,
+				4D6FBF7722C6108B007B804D /* DefaultEmpty.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,53 +433,35 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BiliBili/Pods-BiliBili-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
-				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -423,15 +473,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-BiliBili-checkManifestLockResult.txt",
 			);
@@ -447,25 +493,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C35B69E22231FA12002B4760 /* LoginProtocol.swift in Sources */,
-				C36779EB22216E45005729B9 /* User.swift in Sources */,
-				C36779E622216373005729B9 /* Requestable.swift in Sources */,
+				4D6FBF5722C5F061007B804D /* Keychain.swift in Sources */,
+				4D6FBF4522C45876007B804D /* String+URL.swift in Sources */,
+				4D6FBF5322C5EFB9007B804D /* TabBarController.swift in Sources */,
+				4D6FBF6922C6004F007B804D /* LoginModel.swift in Sources */,
+				4D6FBF4922C4A057007B804D /* NetworkError.swift in Sources */,
 				C36779F32222A678005729B9 /* BiliBiliTargetType.swift in Sources */,
 				C302DC0C219BB55C00853412 /* ViewController.swift in Sources */,
 				C35B69DB2230B417002B4760 /* Realmable.swift in Sources */,
+				4D6FBF4D22C5ED83007B804D /* BaseViewController.swift in Sources */,
 				C36779ED22219D00005729B9 /* NetworkManager.swift in Sources */,
 				C35B69D22230A7D7002B4760 /* Realm.swift in Sources */,
-				C35B69E5223228FB002B4760 /* LoginRouter.swift in Sources */,
-				C31104BC2233FC2D00B2B77D /* LoginPresenter.swift in Sources */,
 				C35B69D92230AC21002B4760 /* UserManager.swift in Sources */,
 				C36779F12222A5F0005729B9 /* LoginAPI.swift in Sources */,
+				4D6FBF6C22C60851007B804D /* Bridge.swift in Sources */,
 				C31104C12234050A00B2B77D /* NavigationController.swift in Sources */,
-				C31104BE2233FD7D00B2B77D /* LoginView.swift in Sources */,
+				4D6FBF6F22C60934007B804D /* Int+Bytes.swift in Sources */,
+				4D6FBF6722C60039007B804D /* LoginController.swift in Sources */,
 				C302DC0A219BB55C00853412 /* AppDelegate.swift in Sources */,
-				C31104BA2233E51900B2B77D /* LoginViewController.swift in Sources */,
-				C35B69CF222FB691002B4760 /* Request.swift in Sources */,
-				C35B69CD222FA233002B4760 /* Model.swift in Sources */,
+				4D6FBF5922C5F070007B804D /* UserDefault.swift in Sources */,
+				4D6FBF7922C610EF007B804D /* UIView+LoadXib.swift in Sources */,
+				4D6FBF4722C49D20007B804D /* Observable+ObjectMapper+Moya.swift in Sources */,
+				C35B69CD222FA233002B4760 /* NetworkStatus.swift in Sources */,
+				4D6FBF7222C60BBB007B804D /* IBInspectable.swift in Sources */,
+				4D6FBF5F22C5F4D5007B804D /* LoginViewModel.swift in Sources */,
+				4D6FBF6322C5F50A007B804D /* LoginView.swift in Sources */,
 				C35B69D42230AA57002B4760 /* DataBaseManager.swift in Sources */,
+				4D6FBF7522C60C8F007B804D /* ThemeProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,8 +667,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y6DXHFGU9M;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BiliBili/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -624,7 +678,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BiliBili.Yijo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -635,8 +689,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y6DXHFGU9M;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BiliBili/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -646,7 +700,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BiliBili.Yijo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

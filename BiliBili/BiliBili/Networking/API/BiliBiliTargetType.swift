@@ -2,7 +2,7 @@
 //  BiliBiliTargetType.swift
 //  BiliBili
 //
-//  Created by administrator on 2019/2/24.
+//  Created by Near on 2019/2/24.
 //  Copyright © 2019年 Yijo. All rights reserved.
 //
 
@@ -18,7 +18,7 @@ protocol BiliBiliTargetType: TargetType {
 
 // MARK: Default implementation
 extension BiliBiliTargetType {
-    var baseURL: URL { return URL(string: "3")! }
+    var baseURL: URL { return URL(string: "http://news-at.zhihu.com/api/")! }
     
     var path: String { return "" }
     
