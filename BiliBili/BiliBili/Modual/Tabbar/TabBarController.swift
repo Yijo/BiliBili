@@ -9,12 +9,21 @@
 import UIKit
 
 class TabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let loginVC = LoginController()
-        
-        self.present(loginVC, animated: true, completion: nil)
+        addChild()
+    }
+}
+
+
+// MARK: - Add children controllers
+private extension TabBarController {
+    func addChild() {
+        let addChildProvider = TabBarAddChildProvider()
+        for child in addChildProvider.childControllers {
+            addChildViewController(child)
+        }
     }
 }

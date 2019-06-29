@@ -10,7 +10,7 @@ import RxSwift
 import ObjectMapper
 import Moya
 
-typealias JSONResponse = [String: Any]
+fileprivate typealias JSONResponse = [String: Any]
 
 extension ObservableType where E == Response {
     func mapObject<T: Mappable>(type: T.Type) -> Observable<T> {

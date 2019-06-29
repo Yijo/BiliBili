@@ -12,8 +12,8 @@ class LoginController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let loginView = LoginView()
-        // Do any additional setup after loading the view.
+        let loginView = LoginView.loadFromNib()
+        
+        self.view = loginView
     }
 }

@@ -1,0 +1,35 @@
+{
+    "tabbar_items": [
+                     {
+                     "page": "HomeController",
+                     "title": "首页",
+                     "image": "",
+                     "selected_image": "",
+                     },
+                     {
+                     "page": "ChannelController",
+                     "title": "频道",
+                     "image": "",
+                     "selected_image": "",
+                     },
+                     {
+                     "page": "TrendController",
+                     "title": "动态",
+                     "image": "",
+                     "selected_image": "",
+                     },
+                     {
+                     "page": "PurchaseController",
+                     "title": "会员购",
+                     "image": "",
+                     "selected_image": "",
+                     },
+                     {
+                     "page": "MineController",
+                     "title": "我的",
+                     "image": "",
+                     "selected_image": "",
+                     }
+                     
+                     ]
+}
