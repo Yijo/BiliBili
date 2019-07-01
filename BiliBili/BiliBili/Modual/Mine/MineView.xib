@@ -52,6 +52,9 @@
                             <state key="normal" title="登录">
                                 <color key="titleColor" red="0.97254901959999995" green="0.4549019608" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="signIn:" destination="iN0-l3-epB" eventType="touchUpInside" id="UtJ-Id-YTx"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.97254901960784312" green="0.45490196078431372" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
@@ -116,6 +119,13 @@
                 <constraint firstItem="qza-Qw-EKD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yK3-mX-RcP"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="registerButton" destination="BuZ-dT-Ib2" id="Lw0-t8-uCS"/>
+                <outlet property="scanButton" destination="ufW-4G-7hE" id="q0r-2G-5OZ"/>
+                <outlet property="settingButton" destination="Rk1-de-MIK" id="77q-vA-7XB"/>
+                <outlet property="signInButton" destination="heP-c3-bpQ" id="vhU-js-q2q"/>
+                <outlet property="themeButton" destination="4Y1-Tk-nLP" id="Gdo-bC-Va3"/>
+            </connections>
             <point key="canvasLocation" x="32.5" y="113.5"/>
         </view>
     </objects>

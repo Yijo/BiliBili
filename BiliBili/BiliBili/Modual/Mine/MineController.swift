@@ -7,9 +7,11 @@
 //
 
 import UIKit
-
+//import
 class MineController: BaseViewController {
 
+    let mineViewModel = MineViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: false)

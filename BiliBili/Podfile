@@ -26,6 +26,9 @@ target 'BiliBili' do
   ## Keyboard
   pod 'IQKeyboardManagerSwift'
   
+  ## Theme
+#  pod 'SwiftTheme', '~> 0.3.3'
+
   ## Form
 #  pod 'Eureka'
 

@@ -36,6 +36,12 @@
 		4D6FBF8E22C79374007B804D /* MineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF8D22C79374007B804D /* MineView.swift */; };
 		4D6FBF9022C7939B007B804D /* MineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6FBF8F22C7939B007B804D /* MineView.xib */; };
 		4D6FBF9222C79516007B804D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF9122C79516007B804D /* Constant.swift */; };
+		4D6FBF9422C8DE44007B804D /* MineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF9322C8DE44007B804D /* MineViewModel.swift */; };
+		4D6FBF9822C9A52A007B804D /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF9722C9A52A007B804D /* ProgressHUD.swift */; };
+		4D6FBF9D22C9FB96007B804D /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF9C22C9FB96007B804D /* BaseCoordinator.swift */; };
+		4D6FBF9F22CA00E9007B804D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF9E22CA00E9007B804D /* AppCoordinator.swift */; };
+		4D6FBFA122CA02E4007B804D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBFA022CA02E4007B804D /* Coordinator.swift */; };
+		4D6FBFA322CA062B007B804D /* UINavigationControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBFA222CA062B007B804D /* UINavigationControllerType.swift */; };
 		C302DC0A219BB55C00853412 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C302DC09219BB55C00853412 /* AppDelegate.swift */; };
 		C302DC0F219BB55C00853412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C302DC0D219BB55C00853412 /* Main.storyboard */; };
 		C302DC11219BB55E00853412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C302DC10219BB55E00853412 /* Assets.xcassets */; };
@@ -83,6 +89,12 @@
 		4D6FBF8D22C79374007B804D /* MineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineView.swift; sourceTree = "<group>"; };
 		4D6FBF8F22C7939B007B804D /* MineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineView.xib; sourceTree = "<group>"; };
 		4D6FBF9122C79516007B804D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		4D6FBF9322C8DE44007B804D /* MineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewModel.swift; sourceTree = "<group>"; };
+		4D6FBF9722C9A52A007B804D /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		4D6FBF9C22C9FB96007B804D /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		4D6FBF9E22CA00E9007B804D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4D6FBFA022CA02E4007B804D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4D6FBFA222CA062B007B804D /* UINavigationControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerType.swift; sourceTree = "<group>"; };
 		87563A550633CA1B54493B7E /* Pods-BiliBili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiliBili.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiliBili/Pods-BiliBili.debug.xcconfig"; sourceTree = "<group>"; };
 		87AA59B27A9339253975ED32 /* Pods-BiliBili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiliBili.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiliBili/Pods-BiliBili.release.xcconfig"; sourceTree = "<group>"; };
 		C302DC06219BB55C00853412 /* BiliBili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiliBili.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,6 +268,7 @@
 				4D6FBF8122C6FB6A007B804D /* MineController.swift */,
 				4D6FBF8D22C79374007B804D /* MineView.swift */,
 				4D6FBF8F22C7939B007B804D /* MineView.xib */,
+				4D6FBF9322C8DE44007B804D /* MineViewModel.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -284,6 +297,34 @@
 			path = Purchase;
 			sourceTree = "<group>";
 		};
+		4D6FBF9522C9A419007B804D /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF9622C9A475007B804D /* HUD */,
+				4D6FBF7322C60C7B007B804D /* Theme */,
+			);
+			path = Componets;
+			sourceTree = "<group>";
+		};
+		4D6FBF9622C9A475007B804D /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF9722C9A52A007B804D /* ProgressHUD.swift */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		4D6FBF9B22C9FB5D007B804D /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4D6FBF9C22C9FB96007B804D /* BaseCoordinator.swift */,
+				4D6FBF9E22CA00E9007B804D /* AppCoordinator.swift */,
+				4D6FBFA022CA02E4007B804D /* Coordinator.swift */,
+				4D6FBFA222CA062B007B804D /* UINavigationControllerType.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		C302DBFD219BB55C00853412 = {
 			isa = PBXGroup;
 			children = (
@@ -305,7 +346,8 @@
 		C302DC08219BB55C00853412 /* BiliBili */ = {
 			isa = PBXGroup;
 			children = (
-				4D6FBF7322C60C7B007B804D /* Theme */,
+				4D6FBF9B22C9FB5D007B804D /* Coordinator */,
+				4D6FBF9522C9A419007B804D /* Componets */,
 				4D6FBF6A22C60840007B804D /* Bridge */,
 				4D6FBF4E22C5EF63007B804D /* Sources */,
 				4D6FBF4322C4585A007B804D /* Extension */,
@@ -564,6 +606,7 @@
 				4D6FBF5722C5F061007B804D /* Keychain.swift in Sources */,
 				4D6FBF4522C45876007B804D /* String+URL.swift in Sources */,
 				4D6FBF5322C5EFB9007B804D /* TabBarController.swift in Sources */,
+				4D6FBFA322CA062B007B804D /* UINavigationControllerType.swift in Sources */,
 				4D6FBF6922C6004F007B804D /* LoginModel.swift in Sources */,
 				4D6FBF4922C4A057007B804D /* NetworkError.swift in Sources */,
 				4D6FBF8022C6FB5D007B804D /* ChannelController.swift in Sources */,
@@ -576,6 +619,9 @@
 				C35B69D92230AC21002B4760 /* UserManager.swift in Sources */,
 				C36779F12222A5F0005729B9 /* LoginAPI.swift in Sources */,
 				4D6FBF8A22C7058B007B804D /* TabBarModel.swift in Sources */,
+				4D6FBF9F22CA00E9007B804D /* AppCoordinator.swift in Sources */,
+				4D6FBF9D22C9FB96007B804D /* BaseCoordinator.swift in Sources */,
+				4D6FBF9422C8DE44007B804D /* MineViewModel.swift in Sources */,
 				4D6FBF6C22C60851007B804D /* Bridge.swift in Sources */,
 				C31104C12234050A00B2B77D /* NavigationController.swift in Sources */,
 				4D6FBF6F22C60934007B804D /* Int+Bytes.swift in Sources */,
@@ -587,8 +633,10 @@
 				4D6FBF5922C5F070007B804D /* UserDefault.swift in Sources */,
 				4D6FBF7922C610EF007B804D /* UIView+LoadXib.swift in Sources */,
 				4D6FBF4722C49D20007B804D /* Observable+ObjectMapper+Moya.swift in Sources */,
+				4D6FBF9822C9A52A007B804D /* ProgressHUD.swift in Sources */,
 				C35B69CD222FA233002B4760 /* NetworkStatus.swift in Sources */,
 				4D6FBF7222C60BBB007B804D /* IBInspectable.swift in Sources */,
+				4D6FBFA122CA02E4007B804D /* Coordinator.swift in Sources */,
 				4D6FBF5F22C5F4D5007B804D /* LoginViewModel.swift in Sources */,
 				4D6FBF8C22C7096E007B804D /* TabBarAddChildProvider.swift in Sources */,
 				4D6FBF8E22C79374007B804D /* MineView.swift in Sources */,
@@ -745,6 +793,20 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ObjectMapper\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Realm\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toaster\"",
+				);
 				INFOPLIST_FILE = BiliBili/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -756,6 +818,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -767,6 +830,20 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ObjectMapper\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Realm\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toaster\"",
+				);
 				INFOPLIST_FILE = BiliBili/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -778,6 +855,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
