@@ -6,6 +6,21 @@
 //  Copyright © 2019年 Yijo. All rights reserved.
 //
 
-import Foundation
-
-
+import UIKit
+import SwiftTheme
+@objc enum ThemePrimaryKey: Int {
+    case light
+    case night
+}
+extension UIView {
+    
+    @IBInspectable var themePrimaryKey: ThemePrimaryKey {
+        get {
+            return self.themePrimaryKey
+        }
+        set {
+            self.themePrimaryKey = newValue
+            self.theme_backgroundColor = ["#fff", "000"]
+        }
+    }
+}

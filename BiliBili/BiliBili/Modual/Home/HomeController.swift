@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import SwiftTheme
 
 class HomeController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .red
+        view.theme_backgroundColor = ["#FFF", "#000"]
     }
 }

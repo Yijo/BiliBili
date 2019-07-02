@@ -7,6 +7,8 @@ platform :ios, '10.0'
 target 'BiliBili' do
 #    pod 'Moya'
     pod 'Moya/RxSwift', '~> 11.0'
+    
+    pod 'RxDataSources', '~> 3'
 
 # State
 #    pod 'ReSwift'
@@ -27,7 +29,7 @@ target 'BiliBili' do
   pod 'IQKeyboardManagerSwift'
   
   ## Theme
-#  pod 'SwiftTheme', '~> 0.3.3'
+  pod 'SwiftTheme', '~> 0.3.3'
 
   ## Form
 #  pod 'Eureka'
@@ -55,7 +57,7 @@ target 'BiliBili' do
 #  pod 'MJRefresh'
 
   ## Image download
-#  pod 'Kingfisher'
+  pod 'Kingfisher', '~> 4.6.3'
 
   ## Database
   pod 'RealmSwift'

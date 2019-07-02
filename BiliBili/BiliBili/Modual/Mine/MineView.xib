@@ -108,18 +108,33 @@
                         <constraint firstItem="MD0-Nt-aLH" firstAttribute="leading" secondItem="a3z-88-htk" secondAttribute="leading" id="vWR-Y4-5F8"/>
                     </constraints>
                 </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="16w-z4-HCf">
+                    <rect key="frame" x="0.0" y="200" width="375" height="467"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Hl-km-lEP">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="50" height="50"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="16w-z4-HCf" secondAttribute="trailing" id="2Ge-5X-pEn"/>
                 <constraint firstItem="3mp-1h-gep" firstAttribute="top" secondItem="qza-Qw-EKD" secondAttribute="bottom" id="3bs-pq-3Oc"/>
                 <constraint firstItem="3mp-1h-gep" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="76S-8A-4eX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="16w-z4-HCf" secondAttribute="bottom" id="Oyu-gm-Peb"/>
                 <constraint firstItem="qza-Qw-EKD" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="gOI-mR-oMM"/>
                 <constraint firstItem="3mp-1h-gep" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="s03-dN-QHd"/>
                 <constraint firstItem="qza-Qw-EKD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wR2-bx-Tew"/>
+                <constraint firstItem="16w-z4-HCf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xBv-qm-hu0"/>
                 <constraint firstItem="qza-Qw-EKD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yK3-mX-RcP"/>
+                <constraint firstItem="16w-z4-HCf" firstAttribute="top" secondItem="3mp-1h-gep" secondAttribute="bottom" id="zqO-Ba-vNQ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="collectionView" destination="16w-z4-HCf" id="saP-oY-hma"/>
                 <outlet property="registerButton" destination="BuZ-dT-Ib2" id="Lw0-t8-uCS"/>
                 <outlet property="scanButton" destination="ufW-4G-7hE" id="q0r-2G-5OZ"/>
                 <outlet property="settingButton" destination="Rk1-de-MIK" id="77q-vA-7XB"/>

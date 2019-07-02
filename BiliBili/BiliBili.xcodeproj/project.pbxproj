@@ -42,6 +42,32 @@
 		4D6FBF9F22CA00E9007B804D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBF9E22CA00E9007B804D /* AppCoordinator.swift */; };
 		4D6FBFA122CA02E4007B804D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBFA022CA02E4007B804D /* Coordinator.swift */; };
 		4D6FBFA322CA062B007B804D /* UINavigationControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBFA222CA062B007B804D /* UINavigationControllerType.swift */; };
+		4D6FBFA522CB0132007B804D /* MineCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FBFA422CB0132007B804D /* MineCoordinator.swift */; };
+		4DB7D44322CB23F9007EE267 /* ScanCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D44222CB23F9007EE267 /* ScanCodeController.swift */; };
+		4DB7D44522CB2417007EE267 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D44422CB2417007EE267 /* SettingController.swift */; };
+		4DB7D44722CB243D007EE267 /* MineThemeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D44622CB243D007EE267 /* MineThemeController.swift */; };
+		4DB7D45722CB272A007EE267 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D45622CB272A007EE267 /* RegisterController.swift */; };
+		4DB7D45922CB27B4007EE267 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D45822CB27B4007EE267 /* ForgotPasswordController.swift */; };
+		4DB7D45B22CB27EB007EE267 /* MyCustomerServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D45A22CB27EB007EE267 /* MyCustomerServiceController.swift */; };
+		4DB7D45D22CB27FE007EE267 /* CreativeCollegeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D45C22CB27FE007EE267 /* CreativeCollegeController.swift */; };
+		4DB7D45F22CB2812007EE267 /* FreeFlowWatchingVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D45E22CB2812007EE267 /* FreeFlowWatchingVideoController.swift */; };
+		4DB7D46122CB281F007EE267 /* AdolescentModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D46022CB281F007EE267 /* AdolescentModeController.swift */; };
+		4DB7D46322CB282B007EE267 /* BigMemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D46222CB282B007EE267 /* BigMemberController.swift */; };
+		4DB7D46522CB285B007EE267 /* OfflineCacheController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D46422CB285B007EE267 /* OfflineCacheController.swift */; };
+		4DB7D46722CB286D007EE267 /* HistoryRecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D46622CB286D007EE267 /* HistoryRecordController.swift */; };
+		4DB7D46922CB287F007EE267 /* MyCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D46822CB287F007EE267 /* MyCollectionController.swift */; };
+		4DB7D46B22CB2891007EE267 /* MyFocusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D46A22CB2891007EE267 /* MyFocusController.swift */; };
+		4DB7D46D22CB28A2007EE267 /* LaterLookAgainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D46C22CB28A2007EE267 /* LaterLookAgainController.swift */; };
+		4DB7D46F22CB28BA007EE267 /* BCoinPurseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D46E22CB28BA007EE267 /* BCoinPurseController.swift */; };
+		4DB7D47122CB28CF007EE267 /* BuyingCenterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D47022CB28CF007EE267 /* BuyingCenterController.swift */; };
+		4DB7D47322CB28E1007EE267 /* LiveCenterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D47222CB28E1007EE267 /* LiveCenterController.swift */; };
+		4DB7D47822CB2EED007EE267 /* DefaultCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D47622CB2EED007EE267 /* DefaultCollectionCell.swift */; };
+		4DB7D47922CB2EED007EE267 /* DefaultCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7D47722CB2EED007EE267 /* DefaultCollectionCell.xib */; };
+		4DB7D47D22CB2F24007EE267 /* DefaultTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D47B22CB2F24007EE267 /* DefaultTableCell.swift */; };
+		4DB7D47E22CB2F24007EE267 /* DefaultTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7D47C22CB2F24007EE267 /* DefaultTableCell.xib */; };
+		4DB7D48122CB3AE9007EE267 /* Theme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4DB7D48022CB3AE9007EE267 /* Theme.bundle */; };
+		4DB7D48322CB4E06007EE267 /* ThemePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D48222CB4E06007EE267 /* ThemePath.swift */; };
+		4DB7D48522CB5048007EE267 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7D48422CB5048007EE267 /* ThemeManager.swift */; };
 		C302DC0A219BB55C00853412 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C302DC09219BB55C00853412 /* AppDelegate.swift */; };
 		C302DC0F219BB55C00853412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C302DC0D219BB55C00853412 /* Main.storyboard */; };
 		C302DC11219BB55E00853412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C302DC10219BB55E00853412 /* Assets.xcassets */; };
@@ -95,6 +121,32 @@
 		4D6FBF9E22CA00E9007B804D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		4D6FBFA022CA02E4007B804D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4D6FBFA222CA062B007B804D /* UINavigationControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerType.swift; sourceTree = "<group>"; };
+		4D6FBFA422CB0132007B804D /* MineCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineCoordinator.swift; sourceTree = "<group>"; };
+		4DB7D44222CB23F9007EE267 /* ScanCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanCodeController.swift; sourceTree = "<group>"; };
+		4DB7D44422CB2417007EE267 /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		4DB7D44622CB243D007EE267 /* MineThemeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineThemeController.swift; sourceTree = "<group>"; };
+		4DB7D45622CB272A007EE267 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		4DB7D45822CB27B4007EE267 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
+		4DB7D45A22CB27EB007EE267 /* MyCustomerServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomerServiceController.swift; sourceTree = "<group>"; };
+		4DB7D45C22CB27FE007EE267 /* CreativeCollegeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativeCollegeController.swift; sourceTree = "<group>"; };
+		4DB7D45E22CB2812007EE267 /* FreeFlowWatchingVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFlowWatchingVideoController.swift; sourceTree = "<group>"; };
+		4DB7D46022CB281F007EE267 /* AdolescentModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdolescentModeController.swift; sourceTree = "<group>"; };
+		4DB7D46222CB282B007EE267 /* BigMemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigMemberController.swift; sourceTree = "<group>"; };
+		4DB7D46422CB285B007EE267 /* OfflineCacheController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineCacheController.swift; sourceTree = "<group>"; };
+		4DB7D46622CB286D007EE267 /* HistoryRecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRecordController.swift; sourceTree = "<group>"; };
+		4DB7D46822CB287F007EE267 /* MyCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionController.swift; sourceTree = "<group>"; };
+		4DB7D46A22CB2891007EE267 /* MyFocusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFocusController.swift; sourceTree = "<group>"; };
+		4DB7D46C22CB28A2007EE267 /* LaterLookAgainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaterLookAgainController.swift; sourceTree = "<group>"; };
+		4DB7D46E22CB28BA007EE267 /* BCoinPurseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCoinPurseController.swift; sourceTree = "<group>"; };
+		4DB7D47022CB28CF007EE267 /* BuyingCenterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyingCenterController.swift; sourceTree = "<group>"; };
+		4DB7D47222CB28E1007EE267 /* LiveCenterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCenterController.swift; sourceTree = "<group>"; };
+		4DB7D47622CB2EED007EE267 /* DefaultCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCollectionCell.swift; sourceTree = "<group>"; };
+		4DB7D47722CB2EED007EE267 /* DefaultCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultCollectionCell.xib; sourceTree = "<group>"; };
+		4DB7D47B22CB2F24007EE267 /* DefaultTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableCell.swift; sourceTree = "<group>"; };
+		4DB7D47C22CB2F24007EE267 /* DefaultTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultTableCell.xib; sourceTree = "<group>"; };
+		4DB7D48022CB3AE9007EE267 /* Theme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Theme.bundle; sourceTree = "<group>"; };
+		4DB7D48222CB4E06007EE267 /* ThemePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePath.swift; sourceTree = "<group>"; };
+		4DB7D48422CB5048007EE267 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		87563A550633CA1B54493B7E /* Pods-BiliBili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiliBili.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiliBili/Pods-BiliBili.debug.xcconfig"; sourceTree = "<group>"; };
 		87AA59B27A9339253975ED32 /* Pods-BiliBili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiliBili.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiliBili/Pods-BiliBili.release.xcconfig"; sourceTree = "<group>"; };
 		C302DC06219BB55C00853412 /* BiliBili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiliBili.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,8 +208,10 @@
 		4D6FBF4E22C5EF63007B804D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4DB7D47F22CB3A4E007EE267 /* Theme */,
 				4D6FBF4F22C5EF7E007B804D /* menu.json */,
 				4D6FBF7622C6108B007B804D /* DefaultEmpty.xib */,
+				4DB7D48022CB3AE9007EE267 /* Theme.bundle */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -192,6 +246,8 @@
 			isa = PBXGroup;
 			children = (
 				4D6FBF6622C60039007B804D /* LoginController.swift */,
+				4DB7D45622CB272A007EE267 /* RegisterController.swift */,
+				4DB7D45822CB27B4007EE267 /* ForgotPasswordController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -250,6 +306,8 @@
 			isa = PBXGroup;
 			children = (
 				4D6FBF7422C60C8F007B804D /* ThemeProtocol.swift */,
+				4DB7D48222CB4E06007EE267 /* ThemePath.swift */,
+				4DB7D48422CB5048007EE267 /* ThemeManager.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -265,10 +323,16 @@
 		4D6FBF7D22C6FAAD007B804D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				4DB7D44822CB2461007EE267 /* Center */,
+				4DB7D44122CB23D9007EE267 /* ScanCode */,
+				4DB7D44022CB23D1007EE267 /* Setting */,
+				4DB7D43F22CB23BC007EE267 /* MyService */,
+				4DB7D43E22CB239C007EE267 /* Theme */,
 				4D6FBF8122C6FB6A007B804D /* MineController.swift */,
 				4D6FBF8D22C79374007B804D /* MineView.swift */,
 				4D6FBF8F22C7939B007B804D /* MineView.xib */,
 				4D6FBF9322C8DE44007B804D /* MineViewModel.swift */,
+				4D6FBFA422CB0132007B804D /* MineCoordinator.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -300,6 +364,7 @@
 		4D6FBF9522C9A419007B804D /* Componets */ = {
 			isa = PBXGroup;
 			children = (
+				4DB7D47422CB2EA3007EE267 /* UI */,
 				4D6FBF9622C9A475007B804D /* HUD */,
 				4D6FBF7322C60C7B007B804D /* Theme */,
 			);
@@ -323,6 +388,195 @@
 				4D6FBFA222CA062B007B804D /* UINavigationControllerType.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4DB7D43E22CB239C007EE267 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D44622CB243D007EE267 /* MineThemeController.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		4DB7D43F22CB23BC007EE267 /* MyService */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D45522CB2665007EE267 /* MyCustomerService */,
+				4DB7D45422CB2657007EE267 /* CreativeCollege */,
+				4DB7D45322CB25F3007EE267 /* FreeFlowWatchingVideo */,
+				4DB7D45222CB25E2007EE267 /* AdolescentMode */,
+				4DB7D45122CB25DB007EE267 /* BigMember */,
+			);
+			path = MyService;
+			sourceTree = "<group>";
+		};
+		4DB7D44022CB23D1007EE267 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D44422CB2417007EE267 /* SettingController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		4DB7D44122CB23D9007EE267 /* ScanCode */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D44222CB23F9007EE267 /* ScanCodeController.swift */,
+			);
+			path = ScanCode;
+			sourceTree = "<group>";
+		};
+		4DB7D44822CB2461007EE267 /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D45022CB2599007EE267 /* OfflineCache */,
+				4DB7D44F22CB258D007EE267 /* HistoryRecord */,
+				4DB7D44E22CB2585007EE267 /* MyCollection */,
+				4DB7D44D22CB2576007EE267 /* MyFocus */,
+				4DB7D44C22CB2566007EE267 /* LaterLookAgain */,
+				4DB7D44B22CB2553007EE267 /* BCoinPurse */,
+				4DB7D44A22CB253B007EE267 /* BuyingCenter */,
+				4DB7D44922CB2531007EE267 /* LiveCenter */,
+			);
+			path = Center;
+			sourceTree = "<group>";
+		};
+		4DB7D44922CB2531007EE267 /* LiveCenter */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D47222CB28E1007EE267 /* LiveCenterController.swift */,
+			);
+			path = LiveCenter;
+			sourceTree = "<group>";
+		};
+		4DB7D44A22CB253B007EE267 /* BuyingCenter */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D47022CB28CF007EE267 /* BuyingCenterController.swift */,
+			);
+			path = BuyingCenter;
+			sourceTree = "<group>";
+		};
+		4DB7D44B22CB2553007EE267 /* BCoinPurse */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D46E22CB28BA007EE267 /* BCoinPurseController.swift */,
+			);
+			path = BCoinPurse;
+			sourceTree = "<group>";
+		};
+		4DB7D44C22CB2566007EE267 /* LaterLookAgain */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D46C22CB28A2007EE267 /* LaterLookAgainController.swift */,
+			);
+			path = LaterLookAgain;
+			sourceTree = "<group>";
+		};
+		4DB7D44D22CB2576007EE267 /* MyFocus */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D46A22CB2891007EE267 /* MyFocusController.swift */,
+			);
+			path = MyFocus;
+			sourceTree = "<group>";
+		};
+		4DB7D44E22CB2585007EE267 /* MyCollection */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D46822CB287F007EE267 /* MyCollectionController.swift */,
+			);
+			path = MyCollection;
+			sourceTree = "<group>";
+		};
+		4DB7D44F22CB258D007EE267 /* HistoryRecord */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D46622CB286D007EE267 /* HistoryRecordController.swift */,
+			);
+			path = HistoryRecord;
+			sourceTree = "<group>";
+		};
+		4DB7D45022CB2599007EE267 /* OfflineCache */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D46422CB285B007EE267 /* OfflineCacheController.swift */,
+			);
+			path = OfflineCache;
+			sourceTree = "<group>";
+		};
+		4DB7D45122CB25DB007EE267 /* BigMember */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D46222CB282B007EE267 /* BigMemberController.swift */,
+			);
+			path = BigMember;
+			sourceTree = "<group>";
+		};
+		4DB7D45222CB25E2007EE267 /* AdolescentMode */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D46022CB281F007EE267 /* AdolescentModeController.swift */,
+			);
+			path = AdolescentMode;
+			sourceTree = "<group>";
+		};
+		4DB7D45322CB25F3007EE267 /* FreeFlowWatchingVideo */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D45E22CB2812007EE267 /* FreeFlowWatchingVideoController.swift */,
+			);
+			path = FreeFlowWatchingVideo;
+			sourceTree = "<group>";
+		};
+		4DB7D45422CB2657007EE267 /* CreativeCollege */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D45C22CB27FE007EE267 /* CreativeCollegeController.swift */,
+			);
+			path = CreativeCollege;
+			sourceTree = "<group>";
+		};
+		4DB7D45522CB2665007EE267 /* MyCustomerService */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D45A22CB27EB007EE267 /* MyCustomerServiceController.swift */,
+			);
+			path = MyCustomerService;
+			sourceTree = "<group>";
+		};
+		4DB7D47422CB2EA3007EE267 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D47A22CB2F02007EE267 /* TableView */,
+				4DB7D47522CB2EAA007EE267 /* CollectionView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4DB7D47522CB2EAA007EE267 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D47622CB2EED007EE267 /* DefaultCollectionCell.swift */,
+				4DB7D47722CB2EED007EE267 /* DefaultCollectionCell.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		4DB7D47A22CB2F02007EE267 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				4DB7D47B22CB2F24007EE267 /* DefaultTableCell.swift */,
+				4DB7D47C22CB2F24007EE267 /* DefaultTableCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		4DB7D47F22CB3A4E007EE267 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		C302DBFD219BB55C00853412 = {
@@ -525,13 +779,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB7D47E22CB2F24007EE267 /* DefaultTableCell.xib in Resources */,
 				C302DC14219BB55E00853412 /* LaunchScreen.storyboard in Resources */,
 				C302DC11219BB55E00853412 /* Assets.xcassets in Resources */,
 				4D6FBF9022C7939B007B804D /* MineView.xib in Resources */,
+				4DB7D47922CB2EED007EE267 /* DefaultCollectionCell.xib in Resources */,
 				4D6FBF5022C5EF7E007B804D /* menu.json in Resources */,
 				4D6FBF6522C60017007B804D /* LoginView.xib in Resources */,
 				C302DC0F219BB55C00853412 /* Main.storyboard in Resources */,
 				4D6FBF7722C6108B007B804D /* DefaultEmpty.xib in Resources */,
+				4DB7D48122CB3AE9007EE267 /* Theme.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,30 +804,38 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BiliBili/Pods-BiliBili-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework",
 				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTheme.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,39 +868,61 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DB7D47822CB2EED007EE267 /* DefaultCollectionCell.swift in Sources */,
 				4D6FBF5722C5F061007B804D /* Keychain.swift in Sources */,
+				4DB7D46D22CB28A2007EE267 /* LaterLookAgainController.swift in Sources */,
 				4D6FBF4522C45876007B804D /* String+URL.swift in Sources */,
 				4D6FBF5322C5EFB9007B804D /* TabBarController.swift in Sources */,
 				4D6FBFA322CA062B007B804D /* UINavigationControllerType.swift in Sources */,
+				4DB7D46B22CB2891007EE267 /* MyFocusController.swift in Sources */,
 				4D6FBF6922C6004F007B804D /* LoginModel.swift in Sources */,
 				4D6FBF4922C4A057007B804D /* NetworkError.swift in Sources */,
 				4D6FBF8022C6FB5D007B804D /* ChannelController.swift in Sources */,
+				4DB7D47D22CB2F24007EE267 /* DefaultTableCell.swift in Sources */,
+				4DB7D46922CB287F007EE267 /* MyCollectionController.swift in Sources */,
 				C36779F32222A678005729B9 /* BiliBiliTargetType.swift in Sources */,
+				4DB7D44522CB2417007EE267 /* SettingController.swift in Sources */,
 				4D6FBF9222C79516007B804D /* Constant.swift in Sources */,
+				4DB7D45922CB27B4007EE267 /* ForgotPasswordController.swift in Sources */,
+				4DB7D46722CB286D007EE267 /* HistoryRecordController.swift in Sources */,
+				4DB7D45B22CB27EB007EE267 /* MyCustomerServiceController.swift in Sources */,
 				C35B69DB2230B417002B4760 /* Realmable.swift in Sources */,
 				4D6FBF4D22C5ED83007B804D /* BaseViewController.swift in Sources */,
+				4DB7D45F22CB2812007EE267 /* FreeFlowWatchingVideoController.swift in Sources */,
 				C36779ED22219D00005729B9 /* NetworkManager.swift in Sources */,
 				C35B69D22230A7D7002B4760 /* Realm.swift in Sources */,
 				C35B69D92230AC21002B4760 /* UserManager.swift in Sources */,
 				C36779F12222A5F0005729B9 /* LoginAPI.swift in Sources */,
 				4D6FBF8A22C7058B007B804D /* TabBarModel.swift in Sources */,
 				4D6FBF9F22CA00E9007B804D /* AppCoordinator.swift in Sources */,
+				4DB7D48522CB5048007EE267 /* ThemeManager.swift in Sources */,
 				4D6FBF9D22C9FB96007B804D /* BaseCoordinator.swift in Sources */,
+				4DB7D46322CB282B007EE267 /* BigMemberController.swift in Sources */,
+				4DB7D46F22CB28BA007EE267 /* BCoinPurseController.swift in Sources */,
 				4D6FBF9422C8DE44007B804D /* MineViewModel.swift in Sources */,
 				4D6FBF6C22C60851007B804D /* Bridge.swift in Sources */,
 				C31104C12234050A00B2B77D /* NavigationController.swift in Sources */,
 				4D6FBF6F22C60934007B804D /* Int+Bytes.swift in Sources */,
+				4DB7D48322CB4E06007EE267 /* ThemePath.swift in Sources */,
 				4D6FBF7C22C6FAA2007B804D /* HomeController.swift in Sources */,
 				4D6FBF8822C6FC8B007B804D /* PurchaseController.swift in Sources */,
 				4D6FBF8222C6FB6A007B804D /* MineController.swift in Sources */,
+				4DB7D45722CB272A007EE267 /* RegisterController.swift in Sources */,
 				4D6FBF6722C60039007B804D /* LoginController.swift in Sources */,
 				C302DC0A219BB55C00853412 /* AppDelegate.swift in Sources */,
+				4D6FBFA522CB0132007B804D /* MineCoordinator.swift in Sources */,
 				4D6FBF5922C5F070007B804D /* UserDefault.swift in Sources */,
+				4DB7D44722CB243D007EE267 /* MineThemeController.swift in Sources */,
 				4D6FBF7922C610EF007B804D /* UIView+LoadXib.swift in Sources */,
 				4D6FBF4722C49D20007B804D /* Observable+ObjectMapper+Moya.swift in Sources */,
 				4D6FBF9822C9A52A007B804D /* ProgressHUD.swift in Sources */,
 				C35B69CD222FA233002B4760 /* NetworkStatus.swift in Sources */,
+				4DB7D46522CB285B007EE267 /* OfflineCacheController.swift in Sources */,
+				4DB7D47322CB28E1007EE267 /* LiveCenterController.swift in Sources */,
+				4DB7D45D22CB27FE007EE267 /* CreativeCollegeController.swift in Sources */,
 				4D6FBF7222C60BBB007B804D /* IBInspectable.swift in Sources */,
+				4DB7D47122CB28CF007EE267 /* BuyingCenterController.swift in Sources */,
+				4DB7D44322CB23F9007EE267 /* ScanCodeController.swift in Sources */,
 				4D6FBFA122CA02E4007B804D /* Coordinator.swift in Sources */,
 				4D6FBF5F22C5F4D5007B804D /* LoginViewModel.swift in Sources */,
 				4D6FBF8C22C7096E007B804D /* TabBarAddChildProvider.swift in Sources */,
@@ -643,6 +930,7 @@
 				4D6FBF6322C5F50A007B804D /* LoginView.swift in Sources */,
 				C35B69D42230AA57002B4760 /* DataBaseManager.swift in Sources */,
 				4D6FBF8522C6FC5B007B804D /* TrendController.swift in Sources */,
+				4DB7D46122CB281F007EE267 /* AdolescentModeController.swift in Sources */,
 				4D6FBF7522C60C8F007B804D /* ThemeProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

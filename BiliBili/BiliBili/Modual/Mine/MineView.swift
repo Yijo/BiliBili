@@ -17,4 +17,5 @@ class MineView: UIView {
     @IBAction func signIn(_ sender: UIButton) {
         
     }
+    @IBOutlet weak var collectionView: UICollectionView!
 }

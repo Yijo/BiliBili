@@ -23,6 +23,8 @@ private extension TabBarController {
     func addChild() {
         let addChildProvider = TabBarAddChildProvider()
         for child in addChildProvider.childControllers {
+            // add coordinator
+//            let coordinator
             addChildViewController(child)
         }
     }
