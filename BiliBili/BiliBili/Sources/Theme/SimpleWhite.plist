@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIStatusBarStyle</key>
+	<string>Default</string>
+	<key>NavigationController</key>
+	<dict>
+		<key>barTintColor</key>
+		<string>#000</string>
+		<key>titleColor</key>
+		<string>#F8749C</string>
+		<key>titleFont</key>
+		<integer>14</integer>
+	</dict>
+	<key>GlobalController</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>#F3F3F3</string>
+	</dict>
+	<key>LikeNavStyleButton</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>#F3F3F3</string>
+		<key>titleColor</key>
+		<string>#000</string>
+		<key>titleFont</key>
+		<integer>15</integer>
+		<key>cornerRadius</key>
+		<string>5</string>
+	</dict>
+	<key>DefultStyleButton</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>#F8749C</string>
+		<key>titleColor</key>
+		<string>#000</string>
+		<key>titleFont</key>
+		<integer>15</integer>
+		<key>cornerRadius</key>
+		<integer>5</integer>
+	</dict>
+	<key>TabView</key>
+	<dict>
+		<key>cellBackgroundColor</key>
+		<string>#000</string>
+		<key>headTitleColor</key>
+		<string>#FFF</string>
+	</dict>
+	<key>NavStyleView</key>
+	<dict>
+		<key>backgroundColor</key>
+		<string>#000</string>
+	</dict>
+</dict>
+</plist>

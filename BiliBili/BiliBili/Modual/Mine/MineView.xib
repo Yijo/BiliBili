@@ -45,6 +45,9 @@
                             <state key="normal" title="注册">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themePrimaryKey" value="LikeNavStyleButton"/>
+                            </userDefinedRuntimeAttributes>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heP-c3-bpQ">
                             <rect key="frame" x="202.5" y="80" width="94" height="30"/>
@@ -52,6 +55,9 @@
                             <state key="normal" title="登录">
                                 <color key="titleColor" red="0.97254901959999995" green="0.4549019608" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themePrimaryKey" value="DefultStyleButton"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="signIn:" destination="iN0-l3-epB" eventType="touchUpInside" id="UtJ-Id-YTx"/>
                             </connections>
@@ -74,6 +80,9 @@
                         <constraint firstItem="heP-c3-bpQ" firstAttribute="width" secondItem="BuZ-dT-Ib2" secondAttribute="width" id="nfN-MW-fpx"/>
                         <constraint firstItem="Rk1-de-MIK" firstAttribute="top" secondItem="qza-Qw-EKD" secondAttribute="top" constant="25" id="tI0-cL-UlT"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themePrimaryKey" value="NavStyleView"/>
+                    </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mp-1h-gep">
                     <rect key="frame" x="0.0" y="150" width="375" height="50"/>

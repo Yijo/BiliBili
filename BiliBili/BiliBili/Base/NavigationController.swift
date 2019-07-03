@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import SwiftTheme
 
 class NavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.barTintColor = .red
+        self.navigationBar.theme_barTintColor = "NavigationController.barTintColor"
+//        self.navigationBar.theme_titleTextAttributes = ThemeDictionaryPicker.pi
+//        navigationBar.barTintColor = .red
         navigationBar.titleTextAttributes = [.foregroundColor: UIColor.blue]
         // Do any additional setup after loading the view.
     }

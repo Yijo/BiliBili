@@ -20,7 +20,6 @@ class MineController: BaseViewController {
         navigationController?.setNavigationBarHidden(true, animated: false)
         let mineView = MineView.loadFromNib()
         self.view = mineView
-        
         // FIXME: Delete
         mineView.settingButton.addTarget(self, action: #selector(MineController.onClickSetting(button:)), for: .touchUpInside)
         
@@ -31,8 +30,8 @@ class MineController: BaseViewController {
     
     @objc func onClickSetting(button: UIButton) {
         button.isSelected = !button.isSelected
-        let index = button.isSelected ? 0 : 1
-        ThemeManager.setTheme(index: index)
+        let index = button.isSelected ? "GirlPowder" : "SimpleWhite"
+        ThemeManager.setTheme(plistName: index, path: .mainBundle)
         print("123: \(index)")
 //        let settings = SettingController()
 //        self.navigationController?.pushViewController(settings, animated: true)
