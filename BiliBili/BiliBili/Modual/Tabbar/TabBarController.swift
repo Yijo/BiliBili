@@ -13,19 +13,19 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addChild()
+        addChildVC()
     }
 }
 
 
 // MARK: - Add children controllers
 private extension TabBarController {
-    func addChild() {
+    func addChildVC() {
         let addChildProvider = TabBarAddChildProvider()
         for child in addChildProvider.childControllers {
             // add coordinator
 //            let coordinator
-            addChildViewController(child)
+            addChild(child)
         }
     }
 }

@@ -12,7 +12,7 @@ enum LoginAPI {
     case getCaptcha(account: String, style: Int)
     case register(account: String, password: String, captcha: String, style: Int)
     case signIn(account: String, password: String)
-    case signOut()
+    case signOut
 }
 
 extension LoginAPI: BiliBiliTargetType {

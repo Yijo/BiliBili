@@ -8,7 +8,13 @@
 
 import UIKit
 
-public final class ThemeStatusBarStylePicker: ThemePicker {
+#if os(tvOS)
+    
+final class ThemeStatusBarStylePicker: ThemePicker {}
+    
+#else
+
+@objc public final class ThemeStatusBarStylePicker: ThemePicker {
     
     var animated = true
     
@@ -40,22 +46,6 @@ public final class ThemeStatusBarStylePicker: ThemePicker {
         self.init(keyPath: value)
     }
     
-    public class func pickerWithKeyPath(_ keyPath: String) -> ThemeStatusBarStylePicker {
-        return ThemeStatusBarStylePicker(keyPath: keyPath)
-    }
-    
-    public class func pickerWithKeyPath(_ keyPath: String, map: @escaping (Any?) -> UIStatusBarStyle?) -> ThemeStatusBarStylePicker {
-        return ThemeStatusBarStylePicker(v: { map(ThemeManager.value(for: keyPath)) })
-    }
-    
-    public class func pickerWithStyles(_ styles: [UIStatusBarStyle]) -> ThemeStatusBarStylePicker {
-        return ThemeStatusBarStylePicker(v: { ThemeManager.element(for: styles) })
-    }
-    
-    public class func pickerWithStringStyles(_ styles: [String]) -> ThemeStatusBarStylePicker {
-        return ThemeStatusBarStylePicker(v: { ThemeManager.element(for: styles.map(getStyle)) })
-    }
-    
     class func getStyle(stringStyle: String) -> UIStatusBarStyle {
         switch stringStyle.lowercased() {
         case "default"      : return .default
@@ -66,5 +56,31 @@ public final class ThemeStatusBarStylePicker: ThemePicker {
     
 }
 
+public extension ThemeStatusBarStylePicker {
+    
+    class func pickerWithKeyPath(_ keyPath: String, map: @escaping (Any?) -> UIStatusBarStyle?) -> ThemeStatusBarStylePicker {
+        return ThemeStatusBarStylePicker(v: { map(ThemeManager.value(for: keyPath)) })
+    }
+    
+    class func pickerWithStyles(_ styles: [UIStatusBarStyle]) -> ThemeStatusBarStylePicker {
+        return ThemeStatusBarStylePicker(v: { ThemeManager.element(for: styles) })
+    }
+    
+}
+
+@objc public extension ThemeStatusBarStylePicker {
+    
+    class func pickerWithKeyPath(_ keyPath: String) -> ThemeStatusBarStylePicker {
+        return ThemeStatusBarStylePicker(keyPath: keyPath)
+    }
+    
+    class func pickerWithStringStyles(_ styles: [String]) -> ThemeStatusBarStylePicker {
+        return ThemeStatusBarStylePicker(v: { ThemeManager.element(for: styles.map(getStyle)) })
+    }
+    
+}
+
 extension ThemeStatusBarStylePicker: ExpressibleByArrayLiteral {}
 extension ThemeStatusBarStylePicker: ExpressibleByStringLiteral {}
+
+#endif

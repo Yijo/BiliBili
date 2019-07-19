@@ -8,7 +8,13 @@
 
 import UIKit
 
-public final class ThemeBarStylePicker: ThemePicker {
+#if os(tvOS)
+    
+final class ThemeBarStylePicker: ThemePicker {}
+    
+#else
+
+@objc public final class ThemeBarStylePicker: ThemePicker {
     
     public convenience init(keyPath: String) {
         self.init(v: { ThemeBarStylePicker.getStyle(stringStyle: ThemeManager.string(for: keyPath) ?? "") })
@@ -38,22 +44,6 @@ public final class ThemeBarStylePicker: ThemePicker {
         self.init(keyPath: value)
     }
     
-    public class func pickerWithKeyPath(_ keyPath: String) -> ThemeBarStylePicker {
-        return ThemeBarStylePicker(keyPath: keyPath)
-    }
-    
-    public class func pickerWithKeyPath(_ keyPath: String, map: @escaping (Any?) -> UIBarStyle?) -> ThemeBarStylePicker {
-        return ThemeBarStylePicker(v: { map(ThemeManager.value(for: keyPath)) })
-    }
-    
-    public class func pickerWithStyles(_ styles: [UIBarStyle]) -> ThemeBarStylePicker {
-        return ThemeBarStylePicker(v: { ThemeManager.element(for: styles) })
-    }
-    
-    public class func pickerWithStringStyles(_ styles: [String]) -> ThemeBarStylePicker {
-        return ThemeBarStylePicker(v: { ThemeManager.element(for: styles.map(getStyle)) })
-    }
-    
     class func getStyle(stringStyle: String) -> UIBarStyle {
         switch stringStyle.lowercased() {
         case "default"  : return .default
@@ -64,5 +54,31 @@ public final class ThemeBarStylePicker: ThemePicker {
     
 }
 
+public extension ThemeBarStylePicker {
+    
+    class func pickerWithKeyPath(_ keyPath: String, map: @escaping (Any?) -> UIBarStyle?) -> ThemeBarStylePicker {
+        return ThemeBarStylePicker(v: { map(ThemeManager.value(for: keyPath)) })
+    }
+    
+    class func pickerWithStyles(_ styles: [UIBarStyle]) -> ThemeBarStylePicker {
+        return ThemeBarStylePicker(v: { ThemeManager.element(for: styles) })
+    }
+    
+}
+
+@objc public extension ThemeBarStylePicker {
+    
+    class func pickerWithKeyPath(_ keyPath: String) -> ThemeBarStylePicker {
+        return ThemeBarStylePicker(keyPath: keyPath)
+    }
+    
+    class func pickerWithStringStyles(_ styles: [String]) -> ThemeBarStylePicker {
+        return ThemeBarStylePicker(v: { ThemeManager.element(for: styles.map(getStyle)) })
+    }
+    
+}
+
 extension ThemeBarStylePicker: ExpressibleByArrayLiteral {}
 extension ThemeBarStylePicker: ExpressibleByStringLiteral {}
+
+#endif

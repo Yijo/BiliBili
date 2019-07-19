@@ -10,21 +10,19 @@ import UIKit
 import Foundation
 import SwiftTheme
 
+protocol SomeProtocol {
+    var themeValue: ThemePrimaryKey { get set }
+}
 @IBDesignable
 extension UIButton {
 
     var themeValue: ThemePrimaryKey {
-        get {
-            return self.themeValue
-        }
-        set {
-            self.themeValue = newValue
-        }
+        return ThemePrimaryKey.none
     }
     @IBInspectable
     var themePrimaryKey: String {
         get {
-            return self.themeValue.rawValue
+            return themeValue.rawValue
         }
         set {
             let keyPath = newValue
@@ -32,7 +30,6 @@ extension UIButton {
             
             self.theme_backgroundColor = ThemeColorPicker(keyPath: "\(keyPath).backgroundColor")
             self.theme_setTitleColor(ThemeColorPicker(keyPath: "\(keyPath).titleColor"), forState: .normal)
-            self.themeValue = ThemePrimaryKey(rawValue: newValue) ?? .none
         }
     }
 }
